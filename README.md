@@ -3,45 +3,38 @@ It's a simple command line utility to fetch .mpd files. It supports parsing file
 It produces output in JSON format similar to this:
 ```json
 {
-  "audios": [
+  "periods": [
     {
-      "codec": "mp4a.40.2",
-      "bitrate": "64008",
-      "channels": 2,
-      "language": "en"
-    },
-    {
-      "codec": "mp4a.40.2",
-      "bitrate": "128008",
-      "channels": 2,
-      "language": "en"
-    }
-  ],
-  "videos": [
-    {
-      "codec": "avc1.42C00D",
-      "bitrate": "401000",
-      "resolution": "224x100"
-    },
-    {
-      "codec": "avc1.42C016",
-      "bitrate": "751000",
-      "resolution": "448x200"
-    },
-    {
-      "codec": "avc1.4D401F",
-      "bitrate": "1001000",
-      "resolution": "784x350"
-    },
-    {
-      "codec": "avc1.640028",
-      "bitrate": "1501000",
-      "resolution": "1680x750"
-    },
-    {
-      "codec": "avc1.640028",
-      "bitrate": "2200000",
-      "resolution": "1680x750"
+      "audios": [
+        {
+          "codec": "mp4a.40.2",
+          "bitrate": "34189",
+          "channels": 2,
+          "language": "eng"
+        }
+      ],
+      "videos": [
+        {
+          "codec": "avc1.640028",
+          "bitrate": "999120",
+          "resolution": "1920x1080"
+        },
+        {
+          "codec": "avc1.640028",
+          "bitrate": "2003095",
+          "resolution": "1920x1080"
+        },
+        {
+          "codec": "hev1.1.6.L120.90",
+          "bitrate": "1029626",
+          "resolution": "1920x1080"
+        },
+        {
+          "codec": "hev1.1.6.L120.90",
+          "bitrate": "2067007",
+          "resolution": "1920x1080"
+        }
+      ]
     }
   ]
 }
