@@ -53,16 +53,9 @@ It produces output in JSON format similar to this:
 # Testing scenario
 1. `make build`
 2. `make start-file-server`
-3. Here we have 6 testing files:
+3. Test http protocol (files {1..6}.mpd)
   * `./dash-fetcher -p "http://localhost:8080/1.mpd"`
-  * `./dash-fetcher -p "http://localhost:8080/2.mpd"`
-  * ...
-  * `./dash-fetcher -p "http://localhost:8080/6.mpd"`
-4. You can use also https protocol
-5. 3. Here we have 6 testing files:
+4. Test https protocol (files {1..6}.mpd)
   * `./dash-fetcher -p "https://localhost/1.mpd"`
-  * `./dash-fetcher -p "https://localhost/2.mpd"`
-  * ...
-  * `./dash-fetcher -p "https://localhost/6.mpd"`
-6. You can use also local files
+6. Test files protocol (files {1..6}.mpd)
   * `./dash-fetcher -p "file://${HOME}/{cloned-folder}/cmd/file-server/mpds/1.mpd"`
